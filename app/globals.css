@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #FFFFFF;
+  --surface: #F7F6FB;
+  --text: #14121F;
+  --text-soft: #4B4859;
+  --muted: #726F82;
+  --line: #E7E4F0;
+  --accent: #6D5EF0;
+  --accent-soft: #EFECFD;
+  --danger: #D6435A;
+  --danger-soft: #FCEBEF;
+}
+
+.dark {
+  --bg: #0D0C13;
+  --surface: #17151F;
+  --text: #F1EFF9;
+  --text-soft: #C6C2D6;
+  --muted: #8B879C;
+  --line: #262331;
+  --accent: #9C8CFF;
+  --accent-soft: rgba(156, 140, 255, 0.14);
+  --danger: #F0708A;
+  --danger-soft: rgba(240, 112, 138, 0.14);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  border-color: var(--line);
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+.doc-body {
+  white-space: pre-wrap;
+}
+.doc-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.zebra > *:nth-child(even) {
+  background: var(--surface);
+}
