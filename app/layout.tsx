@@ -2,9 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PRD Drafter — free AI PRD generator",
+  title: "PRD Drafter — AI PRD generator",
   description:
-    "Turn a rough product idea into a structured, professional PRD. Free, open-source, built with Next.js and Groq.",
+    "Turn a rough product idea into a structured, professional PRD. Built with Next.js and Groq.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 // Runs before paint so the page never flashes the wrong theme.
