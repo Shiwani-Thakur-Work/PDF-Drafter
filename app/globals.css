@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: light;
   --bg: #FFFFFF;
   --surface: #F7F6FB;
   --text: #14121F;
@@ -16,6 +17,7 @@
 }
 
 .dark {
+  color-scheme: dark;
   --bg: #0D0C13;
   --surface: #17151F;
   --text: #F1EFF9;
@@ -38,8 +40,20 @@ input, textarea, select {
   color: var(--text);
 }
 
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #12101B !important;
+  color: #F1EFF9 !important;
+  border-color: #2D293E !important;
+}
+
 ::placeholder {
   color: var(--muted);
+}
+
+.dark ::placeholder {
+  color: #8B879C !important;
 }
 
 * {
