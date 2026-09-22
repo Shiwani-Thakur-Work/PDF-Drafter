@@ -171,7 +171,7 @@ export default function PrdTool() {
                 onChange={(e) => setIdea(e.target.value)}
                 rows={5}
                 placeholder="e.g.  A mobile app that connects local dog walkers with busy pet owners in metropolitan areas..."
-                className="w-full border border-line rounded-lg px-3 py-3 text-[15px] leading-relaxed focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full bg-paper text-ink placeholder:text-muted border border-line rounded-lg px-3 py-3 text-[15px] leading-relaxed focus:outline-none focus:ring-2 focus:ring-accent"
               />
               <div className="flex items-center justify-between mt-3">
                 <span className="text-xs text-muted">
@@ -237,7 +237,7 @@ export default function PrdTool() {
                     <input
                       value={answers[q.id] || ""}
                       onChange={(e) => setAnswers({ ...answers, [q.id]: e.target.value })}
-                      className="w-full border border-line rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                      className="w-full bg-paper text-ink placeholder:text-muted border border-line rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                       placeholder="Your answer (optional)"
                     />
                   </div>
@@ -276,7 +276,7 @@ export default function PrdTool() {
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                     placeholder="Your name"
-                    className="w-full border border-line rounded-lg px-3 py-2 text-sm bg-paper-raised focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full border border-line rounded-lg px-3 py-2 text-sm bg-paper text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent"
                   />
                 </div>
                 <div>
@@ -284,12 +284,12 @@ export default function PrdTool() {
                   <select
                     value={status}
                     onChange={(e) => setStatus(e.target.value)}
-                    className="w-full border border-line rounded-lg px-3 py-2 text-sm bg-paper-raised focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full border border-line rounded-lg px-3 py-2 text-sm bg-paper text-ink focus:outline-none focus:ring-2 focus:ring-accent"
                   >
-                    <option>Draft</option>
-                    <option>In review</option>
-                    <option>Approved</option>
-                    <option>Shipped</option>
+                    <option className="bg-paper text-ink">Draft</option>
+                    <option className="bg-paper text-ink">In review</option>
+                    <option className="bg-paper text-ink">Approved</option>
+                    <option className="bg-paper text-ink">Shipped</option>
                   </select>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function PrdTool() {
                       value={s.body || ""}
                       onChange={(e) => updateSectionBody(s.id, e.target.value)}
                       rows={Math.max(3, Math.ceil((s.body || "").length / 70))}
-                      className="w-full text-[14.5px] leading-relaxed border border-transparent hover:border-line focus:border-line rounded-lg px-2 py-1.5 -mx-2 focus:outline-none focus:ring-2 focus:ring-accent bg-transparent resize-y"
+                      className="w-full text-[14.5px] leading-relaxed border border-transparent hover:border-line focus:border-line rounded-lg px-2 py-1.5 -mx-2 focus:outline-none focus:ring-2 focus:ring-accent bg-transparent text-ink placeholder:text-muted resize-y"
                     />
                   </motion.div>
                 ))}

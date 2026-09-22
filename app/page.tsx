@@ -17,7 +17,7 @@ export default function Home() {
             {/* Replace with your repo URL once it's pushed. Opens in a new tab so
                 in-progress drafts in the tool below are never lost. */}
             <a
-              href="https://github.com"
+              href="https://github.com/Shiwani-Thakur-Work/PDF-Drafter"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-muted hover:text-ink transition"
